@@ -4,7 +4,7 @@ const { response } = require('express');
 function speakerService(){
     function getSpeakerById(id){
         return new Promise((resolve,reject)=>{
-            axios.get('http://localhost:3000/speakers/'+id)
+            axios.get('https://hidden-scrubland-24550.herokuapp.com/speakers/'+id)
             .then((response)=>{
                 resolve(response);
             })
